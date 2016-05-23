@@ -6,3 +6,7 @@ aws s3 website s3://url2png-vincebloise --index-document index.html --error-docu
 
 ##create message queue
 aws sqs create-queue --queue-name url2png
+## the queue url:
+##{
+##    "QueueUrl": "https://us-west-2.queue.amazonaws.com/001178231653/url2png"
+##}
