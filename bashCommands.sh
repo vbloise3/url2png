@@ -3,3 +3,6 @@
 ##create an s3 bucket with web hosting enabled
 aws s3 mb s3://url2png-vincebloise
 aws s3 website s3://url2png-vincebloise --index-document index.html --error-document error.html
+
+##create message queue
+aws sqs create-queue --queue-name url2png
