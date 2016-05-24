@@ -13,3 +13,8 @@ aws sqs create-queue --queue-name url2png
 
 ##find out how many queue messages are in the queue
 aws sqs get-queue-attributes --queue-url https://us-west-2.queue.amazonaws.com/001178231653/url2png --attribute-names ApproximateNumberOfMessages
+
+##delete the message queue
+aws sqs delete-queue --que-url https://us-west-2.queue.amazonaws.com/001178231653/url2png
+##delete the s3 bucket
+aws s3 rb --force s3://url2png-vincebloise
