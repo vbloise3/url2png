@@ -10,3 +10,6 @@ aws sqs create-queue --queue-name url2png
 ##{
 ##    "QueueUrl": "https://us-west-2.queue.amazonaws.com/001178231653/url2png"
 ##}
+
+##find out how many queue messages are in the queue
+aws sqs get-queue-attributes --queue-url https://us-west-2.queue.amazonaws.com/001178231653/url2png --attribute-names ApproximateNumberOfMessages
